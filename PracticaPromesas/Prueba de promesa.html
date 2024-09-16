@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Promesas</title>
+    <style>
+        html {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body {
+            display: block;
+            text-align: center;
+            background-color: aqua;
+            width: auto;
+            height: auto;
+        }
+
+        #btn1 {
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            border: 2px solid rgb(0, 209, 209);
+            color: aqua;
+            background-color: white;
+        }
+
+        #et1 {
+            width: 50px;
+            height: 25px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #btn1:hover {
+            background-color: black;
+            scale: 1.25;
+            transition-duration: 0.8s;
+        }
+
+        p {
+            color: white;
+            font-size: 25px;
+            font-family: 'Lucida Sans';
+            text-shadow: 3px 3px 2px black;
+        }
+
+        #txt2 {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        #txt3 {
+            position: absolute;
+            font-size: 150px;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+<body>
+
+    <p id="txt1">Adivina el Número</p>
+    <p id="txt2">Ingresa un número del 0 al 10 y prueba tu suerte</p>
+    <p id="txt3"></p>
+    <input id="et1" type="number" value="0" max="10" min="0" required />
+    <br><br>
+    <input id="btn1" type="button" value="Activar" onclick="activarPromesa()" />
+
+    <script src="Promesa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
